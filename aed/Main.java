@@ -1,8 +1,9 @@
-import aulas.aula20;
+import aulas.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("oi");
-        aula20.aula();
+        System.out.println("LIFE IS GOOD");
+        //aula20.aula();
+        aula21.aula();
     }
 }
