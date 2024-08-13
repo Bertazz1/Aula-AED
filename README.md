@@ -8,4 +8,3 @@ Curso. Tecnologia em Análise e Desenvolvimento de Sistemas
 1 ano  
 
 
-![Professor](https://github.com/darlonv.png)
