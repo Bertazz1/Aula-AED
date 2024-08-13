@@ -11,7 +11,7 @@ run:
 
 
 clear:
-	rm bin/Main.class
+	rm bin/*
 
 git:
 	git config --global user.email "gustavobertuzziif@gmail.com"
