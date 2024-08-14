@@ -17,5 +17,21 @@ public class Entrada {
         System.out.println(msg);
         return entrada.nextInt();
     }
+     public static int lerInt(){
+        return entrada.nextInt();
+    }
+    public static double lerDouble(){
+        return entrada.nextDouble();
+    }
+    public static double lerDouble(String msg){
+        System.out.println(msg);
+        return entrada.nextInt();
+    }
+    public static String lerPalavra(){
+        return entrada.next();
+    }
+    public static String lerPalavra(String msg){
+        return entrada.next(msg);
+    }
 }
 
