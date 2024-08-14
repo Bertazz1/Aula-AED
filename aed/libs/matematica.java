@@ -10,7 +10,23 @@ public class matematica {
        }
 
     }
+    public static int maior(int a, int b){
+        if (a<b) {
+         return b;
+        }else{
+         return a;
+        }
+ 
+     }
 
+     public static int ehfatorial (int n){
+        int i; 
+        for (i=1; n>0; n-- ){
+            i=1*n;
+
+        }
+        return i;
+     }
     public static void fibonacci(int n){
         int i =1, fibo=1, f0=1, f1=1;
            
@@ -40,6 +56,74 @@ public class matematica {
             return i;
         }
 
-    
-    
+        public static boolean ehDivisor (int a, int b){
+            if (b%a==0) {
+                return true;
+            }else {
+                return false;
+            }
+        }
+        
+        public static boolean ehPerfeito (int n){
+            int i,j,b=0;
+            for(i=n-1;i>=1;i--){
+                j=n%i;
+                  if (j==0) {
+                      b+=i;
+                     
+                     } 
+                  }
+              if (b==n) {
+                      return true;
+              }else{
+                      return false;
+                  }
+        }
+
+        public static boolean ehPrimo (int n){
+            int i;
+            if (n==2) {
+                return true;
+            }else{
+                for(i=2; i<n; i++){
+        
+                    if (n%i==0) {
+                        return false;
+                    }
+                 
+                }
+                return true;
+            }
+        }
+        public static void mostrarTabuada(int k){
+            int i;
+            for(i=1;i<=10;i++)
+            System.out.println(i*k);
+        }
+
+        public static void mostrarKPrimeirosPrimos(int k){
+           
+                int p=2,contadorPrimos=0;
+                while (contadorPrimos<=k) {
+                    if (ehPrimo(p)==true) {
+                        System.out.println(p);
+                        contadorPrimos++;
+                    }
+                p++;
+                    
+                }
+        }
+        public static void mostrarPerfeitosIntervalo (int a, int b){
+            while (a<=b) {
+                if(ehPerfeito(a)==true){
+                    System.out.println(a);
+                }
+                a++;
+            }
+                
+            
+        }
+
+
+
 }
