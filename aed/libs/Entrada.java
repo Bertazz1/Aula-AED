@@ -31,7 +31,19 @@ public class Entrada {
         return entrada.next();
     }
     public static String lerPalavra(String msg){
-        return entrada.next(msg);
+        System.out.println(msg);
+        return entrada.next();
+    }
+    public static char lercaractere(String msg){
+        System.out.println(msg);
+        return lerPalavra().charAt(0);
+    }
+    public static String lerFrase(){
+        return entrada.nextLine();
+    }
+    public static String lerFrase(String msg){
+        System.out.println(msg);
+        return entrada.nextLine();
     }
 }
 
