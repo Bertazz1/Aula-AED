@@ -1,4 +1,4 @@
-# Aulas de ALgoritmos e Estruturas de Dados  
+# Aulas de Algoritmos e Estruturas de Dados  
 
 Repositório para armazenar os arquivos desenvolvidos nas aulas  
 
