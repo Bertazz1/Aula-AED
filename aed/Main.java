@@ -5,7 +5,7 @@ public class Main {
         System.out.println("LIFE IS GOOD");
         //aula20.aula();
         //aula21.aula();
-        aula23.aula();
-     
+        //aula23.aula();
+        aula24.aula();
     }
 }
