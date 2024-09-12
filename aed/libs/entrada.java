@@ -2,7 +2,7 @@ package libs;
 
 import java.util.Scanner;
 
-public class Entrada {
+public class entrada {
     public static Scanner entrada;
 
     public static void abrir(){
@@ -34,7 +34,7 @@ public class Entrada {
         System.out.println(msg);
         return entrada.next();
     }
-    public static char lercaractere(String msg){
+    public static char lerCaractere(String msg){
         System.out.println(msg);
         return lerPalavra().charAt(0);
     }
@@ -44,6 +44,10 @@ public class Entrada {
     public static String lerFrase(String msg){
         System.out.println(msg);
         return entrada.nextLine();
+    }
+    public static boolean lerBoolean(String msg){
+        System.out.println(msg);
+        return entrada.nextBoolean();
     }
 }
 
