@@ -12,7 +12,7 @@ public class aula25 {
     public static void paresImparesAoContrario(){
         int [] va = new int [10];
         int [] vb = new int [10];
-        int idx1 = 0,idx2=vb.length;
+        int idx1 = 0,idx2=vb.length-1;
         entrada.abrir();
         for(int i = 0; i<va.length; i++){
             va[i]=entrada.lerInt();    }entrada.fechar();
@@ -21,13 +21,13 @@ public class aula25 {
                 if (va[i]%2==0) {
                     vb[idx1]=va[i];
                     idx1++;
-                }else {
+                }else if(idx1!=idx2) {
                     vb[idx2]=va[i];
                     idx2--;
                 }
-
+                System.out.println();
+            }for(int i = 0; i<vb.length; i++){
+            System.out.print(vb[i]);
             }
-            System.out.println(vb);
-
 }
 }
