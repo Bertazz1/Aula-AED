@@ -20,11 +20,11 @@ public static void mediaNumeros(){
     float media;
     int soma;
     int quantidadeAcima=0;
-    Entrada.abrir();
+    entrada.abrir();
     for(int j=0;j<8;j++){
-    a[j]= Entrada.lerInt();   
+    a[j]= entrada.lerInt();   
     }
-    Entrada.fechar();
+    entrada.fechar();
     soma=a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7];
     media=(float)soma/8;
     for(int i=0;i<8;i++){
@@ -40,11 +40,11 @@ public static void vetorVC(){
     va = new int[10];
     vb = new int[10];
     vc = new int[10];
-    Entrada.abrir();
+    entrada.abrir();
     for(int j=0;j<10;j++){
-        va[j]= Entrada.lerInt();
-        vb[j]= Entrada.lerInt();   
-        }Entrada.fechar();
+        va[j]= entrada.lerInt();
+        vb[j]= entrada.lerInt();   
+        }entrada.fechar();
     for(int i=0 ; i<10;i++){
         if(i%2==0){
             vc[i]=va[i]+vb[i];
@@ -84,11 +84,11 @@ public static void vetorVC(){
     public static void trocaNumeroNegativo(){
         int [] a;
         a = new int[10];
-        Entrada.abrir();
+        entrada.abrir();
         for(int j=0;j<10;j++){
-            a[j]= Entrada.lerInt();   
+            a[j]= entrada.lerInt();   
         }
-        Entrada.fechar();
+        entrada.fechar();
         System.out.print("Vetor inicial: ");
         for(int i=0 ; i<10; i++){
             System.out.print(a[i]+" ");

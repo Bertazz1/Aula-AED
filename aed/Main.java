@@ -6,6 +6,7 @@ public class Main {
         //aula20.aula();
         //aula21.aula();
         //aula23.aula();
-        aula24.aula();
+        //aula24.aula();
+        aula25.aula();
     }
 }

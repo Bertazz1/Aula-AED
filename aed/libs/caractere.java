@@ -7,7 +7,7 @@ public class caractere{
     retorno= entrada.substring(0, 3)+entrada.toUpperCase().charAt(3)+entrada.substring(4, entrada.length());
     return retorno;
     }
-    public static String removercaracter  (String entrada, int posi){ 
+    public static String removerCaracter  (String entrada, int posi){ 
         
         String retorno = "";
         retorno= entrada.substring(0, posi)+entrada.substring(posi+1, entrada.length());
@@ -15,7 +15,7 @@ public class caractere{
     }
     
     public static int obterPosiçaoProxChar(String string,int pos_ini, char char1){
-    Entrada.abrir();
+    entrada.abrir();
     int pos_retorno = -1;
     int i;
 
@@ -33,7 +33,7 @@ public class caractere{
        while (i==-1) {
         
         i=obterPosiçaoProxChar(frase, 0, char1);
-        retorno=removercaracter(frase, i);
+        retorno=removerCaracter(frase, i);
        }
        return retorno;
     }

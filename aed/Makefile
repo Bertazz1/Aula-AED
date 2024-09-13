@@ -3,7 +3,7 @@ all: build run
 build:
 	javac -d bin Main.java
 	javac -d bin aulas/aula*.java
-	javac -d bin libs/Entrada.java
+	javac -d bin libs/entrada.java
 	javac -d bin libs/matematica.java
 
 run:

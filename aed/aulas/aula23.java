@@ -1,14 +1,14 @@
 package aulas;
 
-import libs.Entrada;
+import libs.entrada;
 import libs.caractere;
 
 public class aula23 {
     public static void aula(){
         System.out.println("Aula do dia 20/08 - Caracteres");
-        Entrada.abrir();
-        String frase = Entrada.lerFrase("Digite uma frase");
-        char letra=Entrada.lercaractere("digite uma caractere");
+        entrada.abrir();
+        String frase = entrada.lerFrase("Digite uma frase");
+        char letra=entrada.lerCaractere("digite uma caractere");
     
 System.out.println(letra);
         System.out.println(caractere.removerCaracteresFrase(frase,letra));
@@ -21,10 +21,10 @@ System.out.println(letra);
     //     return retorno;
     
 //     public static int obterPosiçaoProxChar(){
-//         Entrada.abrir();
-//         String string = Entrada.lerPalavra("digite uma palavra");
-//         int pos_ini = Entrada.lerInt("Digite a posiçao inicial na palavra que voce deseja procurar o caractere");
-//         char char1 = Entrada.lercaractere();
+//         entrada.abrir();
+//         String string = entrada.lerPalavra("digite uma palavra");
+//         int pos_ini = entrada.lerInt("Digite a posiçao inicial na palavra que voce deseja procurar o caractere");
+//         char char1 = entrada.lercaractere();
 //         int pos_retorno = -1;
 //         int i;
 

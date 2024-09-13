@@ -128,15 +128,10 @@ public class matematica {
          float media;
          int soma;
          int quantidadeAcima=0;
-         a[0]= Entrada.lerInt();   
-         a[1]= Entrada.lerInt();
-         a[2]= Entrada.lerInt();
-         a[3]= Entrada.lerInt();
-         a[4]= Entrada.lerInt();
-         a[5]= Entrada.lerInt();
-         a[6]= Entrada.lerInt();
-         a[7]= Entrada.lerInt();
-         Entrada.fechar();
+         for(int i=0;i<=7;i++){
+         a[i]= entrada.lerInt();   
+        }
+         entrada.fechar();
          soma=a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7];
          media=(float)soma/8;
          for(int i=0;i>=8;i++){

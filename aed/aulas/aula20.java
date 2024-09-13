@@ -1,6 +1,6 @@
 package aulas;
 
-import libs.Entrada;
+import libs.entrada;
 import libs.matematica;
 
 public class aula20 {
@@ -11,16 +11,16 @@ public class aula20 {
 
 
     public static void exLerInteiro(){
-        Entrada.abrir();
+        entrada.abrir();
 
-        int x = Entrada.lerInt("digite um numero");
-        int y = Entrada.lerInt("digite outro");
+        int x = entrada.lerInt("digite um numero");
+        int y = entrada.lerInt("digite outro");
         int j;
         System.out.println("Foi digitado o valor "+ x);
     
         j=matematica.menor(x, y);
         System.out.println("o menor valor foi"+j);
-        Entrada.fechar();
+        entrada.fechar();
     }
 }
 

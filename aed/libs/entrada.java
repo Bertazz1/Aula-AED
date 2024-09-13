@@ -8,11 +8,9 @@ public class entrada {
     public static void abrir(){
         entrada = new Scanner(System.in);
     }
-
     public static void fechar(){
         entrada.close();
     }
-
     public static int lerInt(String msg){
         System.out.println(msg);
         return entrada.nextInt();
@@ -38,6 +36,9 @@ public class entrada {
         System.out.println(msg);
         return lerPalavra().charAt(0);
     }
+    public static char lerCaractere(){
+        return lerPalavra().charAt(0);
+    }
     public static String lerFrase(){
         return entrada.nextLine();
     }
@@ -47,6 +48,9 @@ public class entrada {
     }
     public static boolean lerBoolean(String msg){
         System.out.println(msg);
+        return entrada.nextBoolean();
+    }
+    public static boolean lerBoolean(){
         return entrada.nextBoolean();
     }
 }
