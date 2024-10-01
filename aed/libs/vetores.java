@@ -33,5 +33,4 @@ public class vetores {
         return vetor;
     }
 
-    
 }

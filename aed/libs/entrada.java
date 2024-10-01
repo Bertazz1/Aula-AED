@@ -66,4 +66,9 @@ public class entrada {
     public static boolean lerBoolean() {
         return entrada.nextBoolean();
     }
+
+    public static float lerFloat(String msg) {
+        System.out.println(msg);
+        return entrada.nextFloat();
+    }
 }
