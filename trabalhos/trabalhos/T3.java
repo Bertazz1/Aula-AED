@@ -1,8 +1,6 @@
 package trabalhos;
 
-import libs.vetores;
-
-public class T {
+public class T3 {
     public static void mostrarInteiros(int[] vetor, char separador) {
         for (int i = 0; i < vetor.length; i++) {
             System.out.print(vetor[i] + "" + separador);
@@ -171,6 +169,7 @@ public class T {
 
         return resultadoFinal;
     }
+
     public static int[] diferenca(int[] vetorA, int[] vetorB) {
         int[] temporario = new int[vetorA.length];
         int contador = 0;
@@ -188,5 +187,71 @@ public class T {
         }
 
         return resultado;
+    }
+
+    public static int[][] trianguloDePascal(int n) {
+        int[][] matriz = new int[n][];
+
+        for (int i = 0; i < n; i++) {
+            matriz[i] = new int[i + 1];
+
+            matriz[i][0] = 1;
+            matriz[i][i] = 1;
+
+            for (int j = 1; j < i; j++) {
+                matriz[i][j] = matriz[i - 1][j - 1] + matriz[i - 1][j];
+            }
+        }
+
+        return matriz;
+    }
+
+    public static int[][] matrizTranspor(int[][] matrizA) {
+        int linhas = matrizA.length;
+        int colunas = matrizA[0].length;
+
+        int[][] transposta = new int[colunas][linhas];
+
+        for (int i = 0; i < linhas; i++) {
+            for (int j = 0; j < colunas; j++) {
+                transposta[j][i] = matrizA[i][j];
+            }
+        }
+
+        return transposta;
+    }
+
+    public static int[][] matrizPermutacaoLinhas(int[][] matriz, int linha1, int linha2) {
+
+        int[] temp = matriz[linha1];
+        matriz[linha1] = matriz[linha2];
+        matriz[linha2] = temp;
+
+        return matriz;
+    }
+
+    public static int[][] matrizMultint(int[][] matrizA, int[][] matrizB) {
+        int n = matrizA.length;
+        int m = matrizA[0].length;
+        int p = matrizB[0].length;
+        int q = matrizB.length;
+        if (n != p) {
+            return new int[0][0];
+        }
+        if (m != q)
+
+        {
+            return new int[0][0];
+        }
+        int[][] saida = new int[n][p];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < p; j++) {
+                for (int k = 0; k < m; k++) {
+                    saida[i][j] += matrizA[i][k] * matrizB[k][j];
+                }
+            }
+        }
+        return saida;
     }
 }

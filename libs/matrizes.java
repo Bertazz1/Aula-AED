@@ -194,11 +194,11 @@ public class matrizes {
         int m = ma[0].length;
         int p = mb[0].length;
         int q = mb.length;
-        if (n != p) return null;{
-            
+        if (n != p){
+            return null;
         }
-        if (m != q) return null;{
-            
+        if (m != q){
+            return null;
         }
         int[][] saida = new int[n][p];
 
