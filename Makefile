@@ -4,6 +4,7 @@ build:
 	javac -d bin Main.java
 	javac -d bin aulas/aula*.java
 	javac -d bin libs/*
+	javac -d bin trabalhos/*
 
 run:
 	@java -cp bin Main

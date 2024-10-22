@@ -84,8 +84,8 @@ public class T3 {
     }
 
     public static int[] uniao(int[] vetor1, int[] vetor2) {
-        int tamanhoMaximo = vetor1.length + vetor2.length;
-        int[] resultado = new int[tamanhoMaximo];
+ 
+        int[] resultado = new int[vetor1.length + vetor2.length];
         int contador = 0;
 
         for (int i = 0; i < vetor1.length; i++) {
@@ -156,7 +156,7 @@ public class T3 {
         int contador = 0;
 
         for (int i = 0; i < vetor.length; i++) {
-            if (!contem(temporario, vetor[i], contador)) {
+            if (!contem(temporario, contador, vetor[i])) {
                 temporario[contador] = vetor[i];
                 contador++;
             }
@@ -190,7 +190,7 @@ public class T3 {
     }
 
     public static int[][] trianguloDePascal(int n) {
-        int[][] matriz = new int[n][];
+        int[][] matriz = new int[n][n];
 
         for (int i = 0; i < n; i++) {
             matriz[i] = new int[i + 1];

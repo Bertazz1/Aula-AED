@@ -1,4 +1,6 @@
-import aulas.*;
+
+import libs.saida;
+import trabalhos.T3;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +12,11 @@ public class Main {
         // aula25.aula();
         // aula27.aula();
         // aula28.aula();
-        aula30.aula();
+        // aula30.aula();
         // aula31.aula();
+        int a = 2;
+  
+
+        saida.mostrarMatriz( T3.matrizTranspor(T3.trianguloDePascal(a)) );
     }
 }
